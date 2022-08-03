@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/gbily/workspace/tcp_example/build",
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/tcp.dir/server.cpp.o -c /home/gbily/workspace/tcp_example/server.cpp",
+  "file": "/home/gbily/workspace/tcp_example/server.cpp"
+},
+{
+  "directory": "/home/gbily/workspace/tcp_example/build",
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/tcp.dir/client.cpp.o -c /home/gbily/workspace/tcp_example/client.cpp",
+  "file": "/home/gbily/workspace/tcp_example/client.cpp"
+}
+]

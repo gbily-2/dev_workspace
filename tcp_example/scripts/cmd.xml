@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot>
+    <up-module type="conveyor" numOfSlot="1" status="0"></up-module>
+    <time_out description="timeout for action to complete in sec">30</time_out>
+    <error_code></error_code>
+
+    <sequence description="task type" action="unload" status="incomplete">
+        <task stt="1st" parent="none" next="2nd">
+            <condition type="input" io_port="1">1</condition> 
+            <condition type="input" io_port="2" >1</condition> 
+            <condition type="input" io_port="3"></condition>
+            <action type="input" io_port="10"></action>
+            <action type="output" io_port="10"></action>
+            <status type="input" io_port="11"></status>
+        </task>
+        <task stt="2nd" parent="1st" next="3rd;4th">
+            <condition type="input" io_port="1">1</condition> 
+            <condition type="input" io_port="2" >1</condition> 
+            <condition type="input" io_port="3"></condition>
+            <action type="input" io_port="10"></action>
+            <action type="output" io_port="10"></action>
+            <status type="input" io_port="11"></status>
+        </task>
+        <task stt="3rd" parent="2nd" next="none">
+            <condition type="input" io_port="1"></condition> 
+            <condition type="input" io_port="2" ></condition> 
+            <condition type="input" io_port="3"></condition>
+            <action type="input" io_port="10"></action>
+            <action type="output" io_port="10"></action>
+            <status type="input" io_port="11"></status>
+        </task>
+        <task stt="4th" parent="2nd" next="none">
+            <condition type="input" io_port="1"></condition> 
+            <condition type="input" io_port="2" ></condition> 
+            <condition type="input" io_port="3"></condition>
+            <action type="input" io_port="10"></action>
+            <action type="output" io_port="10"></action>
+            <status type="input" io_port="11"></status>
+        </task>
+    </sequence>
+</robot>

@@ -1,0 +1,1 @@
+/usr/bin/g++  -g  -rdynamic CMakeFiles/tcp.dir/server.cpp.o CMakeFiles/tcp.dir/client.cpp.o  -o tcp 
